@@ -32,7 +32,19 @@ public class test : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-		gameObject.transform.position = spline.Interp(t);
-		t += Time.deltaTime * 8.0f;
+		Vector3 vel;
+		gameObject.transform.position = spline.Interp(t, out vel);
+
+		//t += Time.deltaTime * (velocity / vel.magnitude);
+		t += Time.deltaTime * 20.0f;
+
+		Vector3 front = vel.normalized;
+		Vector3 up = new Vector3(0.0f, 1.0f, 0.0f);
+		Vector3 right = Vector3.Cross(front, up);
+
+		up = Vector3.Cross(right, front);
+
+		gameObject.transform.rotation =  Quaternion.LookRotation(front, up);
+
 	}
 }
