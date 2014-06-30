@@ -12,16 +12,16 @@ public class GetThemeColor : MonoBehaviour
 	public static byte COLOR_B = 255;
 	
 	private UISprite spr;
-	private UISlicedSprite sspr;
+	//private UISlicedSprite sspr;
 	
 	// Use this for initialization
 	void Start () 
 	{
 		this.spr = (UISprite)this.gameObject.GetComponent<UISprite>();
-		this.sspr = (UISlicedSprite)this.gameObject.GetComponent<UISlicedSprite>();
+	//	this.sspr = (UISlicedSprite)this.gameObject.GetComponent<UISlicedSprite>();
 		
 		if (this.spr!=null) this.spr.color = new Color32(GetThemeColor.COLOR_R,GetThemeColor.COLOR_G,GetThemeColor.COLOR_B,255);
-		if (this.sspr!=null) this.sspr.color = new Color32(GetThemeColor.COLOR_R,GetThemeColor.COLOR_G,GetThemeColor.COLOR_B,255);
+	//	if (this.sspr!=null) this.sspr.color = new Color32(GetThemeColor.COLOR_R,GetThemeColor.COLOR_G,GetThemeColor.COLOR_B,255);
 		
 	}
 	
@@ -31,7 +31,7 @@ public class GetThemeColor : MonoBehaviour
 		if (this.realTime)
 		{
 			if (this.spr!=null) this.spr.color = new Color32(GetThemeColor.COLOR_R,GetThemeColor.COLOR_G,GetThemeColor.COLOR_B,255);
-			if (this.sspr!=null) this.sspr.color = new Color32(GetThemeColor.COLOR_R,GetThemeColor.COLOR_G,GetThemeColor.COLOR_B,255);
+			//if (this.sspr!=null) this.sspr.color = new Color32(GetThemeColor.COLOR_R,GetThemeColor.COLOR_G,GetThemeColor.COLOR_B,255);
 		}
 	}
 	

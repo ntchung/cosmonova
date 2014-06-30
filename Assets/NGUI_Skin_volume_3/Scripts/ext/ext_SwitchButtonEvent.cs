@@ -15,7 +15,7 @@ public class ext_SwitchButtonEvent : MonoBehaviour
 	void Start()
 	{
 		this.tweenPos  = this.gameObject.GetComponent<TweenPosition>();	
-		this.tweenPos.Reset();
+		this.tweenPos.ResetToBeginning();
 	
 		this.left_pos = new Vector3(-xOffset,0f,0f);
 		this.right_pos = new Vector3(xOffset,0f,0f);
