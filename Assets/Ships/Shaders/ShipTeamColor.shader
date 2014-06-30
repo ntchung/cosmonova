@@ -2,7 +2,9 @@
 	Properties
 	{
 		_MainTex ("Base (RGB)", 2D) = "white" {}
-		_TeamColor ("Color (RGB)", Color) = (1.0, 0.0, 0.0, 1.0)
+		_GlowTex ("Glow (RGB)", 2D) = "white" {}
+		_TeamColor ("Team base Color (RGB)", Color) = (1.0, 0.0, 0.0, 1.0)
+		_StripeColor ("Stripe Color (RGB)", Color) = (1.0, 1.0, 0.0, 1.0)
 	}
 	
 	SubShader
@@ -43,7 +45,9 @@
 				};
 	
 				sampler2D _MainTex;
+				sampler2D _GlowTex;
 				fixed4 _TeamColor;
+				fixed4 _StripeColor;
 				
 				v2f vert (appdata_t v)
 				{
@@ -53,11 +57,32 @@
 					return o;
 				}
 				
-				fixed4 frag (v2f i) : COLOR
+				fixed3 frag (v2f i) : COLOR
 				{
-					fixed4 col = tex2D(_MainTex, i.texcoord);
-					fixed sum = max( 1.0 - (col.r + col.g + col.b), 0.0 );						
-					return col + _TeamColor * sum;
+					fixed4 diff = tex2D(_MainTex, i.texcoord);					
+					fixed4 glow = tex2D(_GlowTex, i.texcoord);
+					
+					fixed4 base = diff * 0.5;
+					fixed4 teamBaseColour = base * _TeamColor;
+					fixed4 teamStripeColour = base * _StripeColor;
+					
+					base = diff - 0.5;
+					teamBaseColour = teamBaseColour + base;
+					teamStripeColour = teamStripeColour + base;
+					
+					base.rgb = lerp(teamBaseColour, diff, diff.a);
+					base.rgb = lerp(teamStripeColour, base, glow.a);
+					
+					fixed3 col1 = fixed3(1.0, 1.0, 1.0);
+					fixed3 col0 = fixed3(1.0, 1.0, 1.0);
+					
+					fixed3 spec = col1 * glow.b;
+					fixed p = 0.5 * glow.g;
+					fixed3 light = fixed3(p, p, p);
+					light = lerp(col0, light, glow.g);
+					light = light + spec;
+					
+					return base.rgb * light;
 				}
 			ENDCG
 		}
