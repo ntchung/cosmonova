@@ -15,11 +15,12 @@
 			"IgnoreProjector" = "True"
 		}
 		
-		Cull Back
+		Cull Off
 		Lighting Off
 		Fog { Mode Off }		
 		Blend One One
-		Offset -1, -1
+		ZWrite Off
+		ZTest On
 
 		Pass
 		{
