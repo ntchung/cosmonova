@@ -19,9 +19,17 @@ public class Sector : MonoBehaviour
 	{
 		star = GameObject.Instantiate(starPrefab) as GameObject;
 
+		Transform starBody = star.transform.Find("Body");
+		starBody.renderer.sharedMaterial = starMaterials[UnityEngine.Random.Range(0, starMaterials.Length)];
+
+		List<int> unusedPlanetMaterialIds = new List<int>();
+		for (int i = 0; i < planetMaterials.Length; i++) unusedPlanetMaterialIds.Add(i);
+
 		planets = new List<GameObject>();
 
-		int numPlanets = 4;
+		int numPlanets = 8;
+		numPlanets = Mathf.Min (numPlanets, planetMaterials.Length);
+
 		for (int i = 0; i < numPlanets; i++)
 		{
 			bool hasRing = (UnityEngine.Random.Range(0, 4) == 0);
@@ -33,6 +41,15 @@ public class Sector : MonoBehaviour
 			planet.transform.parent = star.transform;
 
 			Transform planetBody = planet.transform.Find("Body");
+			int pos = UnityEngine.Random.Range(0, unusedPlanetMaterialIds.Count);
+			planetBody.renderer.sharedMaterial = planetMaterials[unusedPlanetMaterialIds[pos]];
+			unusedPlanetMaterialIds.RemoveAt(pos);
+
+			if (hasRing)
+			{
+				Transform planetRing = planetBody.Find("Ring");
+				planetRing.renderer.sharedMaterial = planetRingMaterials[UnityEngine.Random.Range(0, planetRingMaterials.Length)];
+			}
 
 			planetBody.localPosition = new Vector3(Mathf.Cos(angle) * radius, 0.0f, Mathf.Sin(angle) * radius);
 
