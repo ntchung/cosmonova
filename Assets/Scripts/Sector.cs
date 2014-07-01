@@ -35,7 +35,7 @@ public class Sector : MonoBehaviour
 			bool hasRing = (UnityEngine.Random.Range(0, 4) == 0);
 			GameObject planet = GameObject.Instantiate(hasRing ? ringPlanetPrefab : planetPrefab) as GameObject;
 
-			float radius = UnityEngine.Random.Range(i + 1.0f, i + 1.5f) * 300.0f;
+			float radius = UnityEngine.Random.Range(i + 1.0f, i + 1.5f) * 1000.0f;
 			float angle = UnityEngine.Random.Range(0.0f, Mathf.PI * 2.0f);
 
 			planet.transform.parent = star.transform;
@@ -54,8 +54,8 @@ public class Sector : MonoBehaviour
 			planetBody.localPosition = new Vector3(Mathf.Cos(angle) * radius, 0.0f, Mathf.Sin(angle) * radius);
 
 			Planet p = planet.GetComponent<Planet>();
-			p.orbitSpeed = 360.0f * UnityEngine.Random.Range(1.0f / (i * 4.0f + 2.5f), 1.0f / (i * 4.0f + 5.0f)) * (UnityEngine.Random.Range(0, 2) == 0 ? 1.0f : -1.0f);
-			p.rotationSpeed = UnityEngine.Random.Range(-180.0f, 180.0f);
+			p.orbitSpeed = 360.0f * UnityEngine.Random.Range(1.0f / (i * 4.0f + 2.5f), 1.0f / (i * 4.0f + 5.0f)) * (UnityEngine.Random.Range(0, 2) == 0 ? 1.0f : -1.0f) / 10.0f;
+			p.rotationSpeed = UnityEngine.Random.Range(-180.0f, 180.0f) / 10.0f;
 		}
 	}
 	
