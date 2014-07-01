@@ -84,6 +84,7 @@ public class Starship : MonoBehaviour
 		Vector3 pos = transform.position;
 		pos += forward * moveSpeed * Time.deltaTime;
 		transform.position = pos;
+
 		transform.rotation = Quaternion.LookRotation(forward);
 	}
 }
