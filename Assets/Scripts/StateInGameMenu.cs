@@ -5,10 +5,15 @@ public class StateInGameMenu : GameState {
 	
 	void Awake()
 	{
-		UIEventListener.Get (FindChild ("ButtonPause")).onClick += (obj) =>
+		GameObject pauseButton = FindChild ("ButtonPause");
+
+		if (pauseButton != null)
 		{
-			StartCoroutine (OnPauseButtonClick ());
-		};		
+			UIEventListener.Get(pauseButton).onClick += (obj) =>
+			{
+				StartCoroutine (OnPauseButtonClick ());
+			};		
+		}
 	}
 	
 	private IEnumerator OnPauseButtonClick()
