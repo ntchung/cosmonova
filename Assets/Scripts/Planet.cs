@@ -28,4 +28,14 @@ public class Planet : MonoBehaviour
 			_cacheMeshTransform.Rotate(Vector3.up * rotationSpeed * Time.deltaTime);
 		}
 	}
+
+	public Vector3 GetPosition()
+	{
+		return _cacheMeshTransform.position;
+	}
+
+	public float GetRadius()
+	{
+		return _cacheTransform.localScale.x * 100.0f / 2.0f;
+	}
 }
