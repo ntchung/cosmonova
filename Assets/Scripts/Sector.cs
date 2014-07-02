@@ -82,4 +82,30 @@ public class Sector : MonoBehaviour
 	{
 		return planets[id].GetRadius();
 	}
+
+	public int selectedPlanet = 0;
+	private string[] planetStrings = {"1", "2", "3", "4", "5", "6", "7", "8"};
+
+	public bool stopping = false;
+
+	void OnGUI () 
+	{
+		selectedPlanet = GUI.Toolbar (new Rect (25, 25, 250, 30), selectedPlanet, planetStrings);
+		stopping = GUI.Toggle (new Rect (25, 75, 100, 30), stopping, "Stop");
+
+		/*
+		// Make a background box
+		GUI.Box(new Rect(10,10,100,90), "Loader Menu");
+		
+		// Make the first button. If it is pressed, Application.Loadlevel (1) will be executed
+		if(GUI.Button(new Rect(20,40,80,20), "Level 1")) {
+			//Application.LoadLevel(1);
+		}
+		
+		// Make the second button.
+		if(GUI.Button(new Rect(20,70,80,20), "Level 2")) {
+			//Application.LoadLevel(2);
+		}
+		*/
+	}
 }

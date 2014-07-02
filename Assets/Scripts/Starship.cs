@@ -6,7 +6,7 @@ public class Starship : MonoBehaviour
 	private enum State
 	{
 		TRAVELLING = 0,
-		TRAVELLING_PAUSE,
+		STOPPING,
 		DOCKING,
 		UNDOCKING,
 		LANDING,
@@ -50,6 +50,8 @@ public class Starship : MonoBehaviour
 
 		bool thrusterOn = false;
 
+		targetPlanetId = sector.selectedPlanet;
+
 		if (state == State.TRAVELLING)
 		{
 			Vector3 target = sector.GetPlanetPosition(targetPlanetId);
@@ -84,12 +86,27 @@ public class Starship : MonoBehaviour
 			position += velocity * Time.deltaTime;
 
 			thrusterOn = true;
+
+			if (sector.stopping && state == State.TRAVELLING)
+			{
+				state = State.STOPPING;
+			}
+		}
+		else if (state == State.STOPPING)
+		{
+			speed = 0.0f;
+			thrusterOn = false;
+
+			if (!sector.stopping)
+			{
+				state = State.TRAVELLING;
+			}
 		}
 		else if (state == State.DOCKING)
 		{
-			Vector3 target = sector.GetPlanetPosition(targetPlanetId);
+			Vector3 target = sector.GetPlanetPosition(landingPlanetId);
 
-			float planetRadius = sector.GetPlanetRadius(targetPlanetId);
+			float planetRadius = sector.GetPlanetRadius(landingPlanetId);
 			target.y += planetRadius;
 
 			Vector3 desired = target - position;
@@ -111,6 +128,11 @@ public class Starship : MonoBehaviour
 			position += desired;
 
 			thrusterOn = true;
+
+			if (targetPlanetId != landingPlanetId)
+			{
+				state = State.UNDOCKING;
+			}
 		}
 		else if (state == State.UNDOCKING)
 		{
@@ -129,7 +151,7 @@ public class Starship : MonoBehaviour
 				state = State.TRAVELLING;
 			}
 			else d = maxD;
-			
+
 			desired.Normalize();
 			desired *= d;
 			
@@ -137,26 +159,23 @@ public class Starship : MonoBehaviour
 			position += desired;
 			
 			thrusterOn = true;
+
+			if (targetPlanetId == landingPlanetId)
+			{
+				state = State.DOCKING;
+			}
 		}
 		else if (state == State.LANDING)
 		{
 			landingTime += Time.deltaTime;
-			if (landingTime > 5.0f)
+
+			speed = 0.0f;
+			thrusterOn = false;
+
+			if (targetPlanetId != landingPlanetId)
 			{
 				state = State.UNDOCKING;
-
-				for (;;)
-				{
-					int nextTargetPlanetId = UnityEngine.Random.Range(0, 8);
-					if (nextTargetPlanetId != targetPlanetId)
-					{
-						targetPlanetId = nextTargetPlanetId;
-						break;
-					}
-				}
 			}
-
-			thrusterOn = false;
 		}
 
 		if (thrusterOn)
