@@ -40,803 +40,583 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 1983c9779697183468d32c643c8f1e4d, type: 2}
-  mSprites: []
-  mPixelSize: 1
-  mReplacement: {fileID: 0}
-  mCoordinates: 0
-  sprites:
+  mSprites:
   - name: cubes_black
-    outer:
-      serializedVersion: 2
-      x: 770
-      y: 844
-      width: 200
-      height: 180
-    inner:
-      serializedVersion: 2
-      x: 770
-      y: 844
-      width: 200
-      height: 180
-    rotated: 0
+    x: 770
+    y: 844
+    width: 200
+    height: 180
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
   - name: slider_V_thumb
-    outer:
-      serializedVersion: 2
-      x: 222
-      y: 367
-      width: 30
-      height: 20
-    inner:
-      serializedVersion: 2
-      x: 222
-      y: 367
-      width: 30
-      height: 20
-    rotated: 0
+    x: 222
+    y: 367
+    width: 30
+    height: 20
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
   - name: pattern_4
-    outer:
-      serializedVersion: 2
-      x: 0
-      y: 87
-      width: 128
-      height: 128
-    inner:
-      serializedVersion: 2
-      x: 1
-      y: 87
-      width: 126
-      height: 128
-    rotated: 0
+    x: 0
+    y: 87
+    width: 128
+    height: 128
+    borderLeft: 1
+    borderRight: 1
+    borderTop: 0
+    borderBottom: 0
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
   - name: pattern_3
-    outer:
-      serializedVersion: 2
-      x: 141
-      y: 639
-      width: 128
-      height: 128
-    inner:
-      serializedVersion: 2
-      x: 142
-      y: 639
-      width: 126
-      height: 128
-    rotated: 0
+    x: 141
+    y: 639
+    width: 128
+    height: 128
+    borderLeft: 1
+    borderRight: 1
+    borderTop: 0
+    borderBottom: 0
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
   - name: Window
-    outer:
-      serializedVersion: 2
-      x: 141
-      y: 24
-      width: 80
-      height: 80
-    inner:
-      serializedVersion: 2
-      x: 186
-      y: 75
-      width: 4
-      height: 5
-    rotated: 0
+    x: 141
+    y: 24
+    width: 80
+    height: 80
+    borderLeft: 45
+    borderRight: 31
+    borderTop: 51
+    borderBottom: 24
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
   - name: SliderCircle_Thum_BIG
-    outer:
-      serializedVersion: 2
-      x: 0
-      y: 486
-      width: 140
-      height: 140
-    inner:
-      serializedVersion: 2
-      x: 0
-      y: 486
-      width: 140
-      height: 140
-    rotated: 0
+    x: 0
+    y: 486
+    width: 140
+    height: 140
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
   - name: button_sliced_arrow_right
-    outer:
-      serializedVersion: 2
-      x: 871
-      y: 803
-      width: 80
-      height: 40
-    inner:
-      serializedVersion: 2
-      x: 911
-      y: 825
-      width: 5
-      height: 2
-    rotated: 0
+    x: 871
+    y: 803
+    width: 80
+    height: 40
+    borderLeft: 40
+    borderRight: 35
+    borderTop: 22
+    borderBottom: 16
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
   - name: Option_background
-    outer:
-      serializedVersion: 2
-      x: 222
-      y: 388
-      width: 40
-      height: 40
-    inner:
-      serializedVersion: 2
-      x: 222
-      y: 388
-      width: 40
-      height: 40
-    rotated: 0
+    x: 222
+    y: 388
+    width: 40
+    height: 40
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
   - name: text_filed
-    outer:
-      serializedVersion: 2
-      x: 270
-      y: 727
-      width: 80
-      height: 40
-    inner:
-      serializedVersion: 2
-      x: 305
-      y: 727
-      width: 7
-      height: 40
-    rotated: 0
+    x: 270
+    y: 727
+    width: 80
+    height: 40
+    borderLeft: 35
+    borderRight: 38
+    borderTop: 0
+    borderBottom: 0
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
   - name: SliderCircle_Background
-    outer:
-      serializedVersion: 2
-      x: 141
-      y: 186
-      width: 80
-      height: 80
-    inner:
-      serializedVersion: 2
-      x: 141
-      y: 186
-      width: 80
-      height: 80
-    rotated: 0
+    x: 141
+    y: 186
+    width: 80
+    height: 80
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
   - name: button_sliced_arrow_left
-    outer:
-      serializedVersion: 2
-      x: 351
-      y: 727
-      width: 80
-      height: 40
-    inner:
-      serializedVersion: 2
-      x: 385
-      y: 747
-      width: 5
-      height: 3
-    rotated: 0
+    x: 351
+    y: 727
+    width: 80
+    height: 40
+    borderLeft: 34
+    borderRight: 41
+    borderTop: 20
+    borderBottom: 17
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
   - name: slider_H_foreground
-    outer:
-      serializedVersion: 2
-      x: 770
-      y: 772
-      width: 80
-      height: 30
-    inner:
-      serializedVersion: 2
-      x: 774
-      y: 772
-      width: 72
-      height: 30
-    rotated: 0
+    x: 770
+    y: 772
+    width: 80
+    height: 30
+    borderLeft: 4
+    borderRight: 4
+    borderTop: 0
+    borderBottom: 0
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
   - name: switch_background
-    outer:
-      serializedVersion: 2
-      x: 770
-      y: 803
-      width: 100
-      height: 40
-    inner:
-      serializedVersion: 2
-      x: 770
-      y: 803
-      width: 100
-      height: 40
-    rotated: 0
+    x: 770
+    y: 803
+    width: 100
+    height: 40
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
   - name: SliderCircle_Background_BIG
-    outer:
-      serializedVersion: 2
-      x: 0
-      y: 627
-      width: 140
-      height: 140
-    inner:
-      serializedVersion: 2
-      x: 0
-      y: 627
-      width: 140
-      height: 140
-    rotated: 0
+    x: 0
+    y: 627
+    width: 140
+    height: 140
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
   - name: pattern_2
-    outer:
-      serializedVersion: 2
-      x: 0
-      y: 216
-      width: 128
-      height: 128
-    inner:
-      serializedVersion: 2
-      x: 1
-      y: 217
-      width: 126
-      height: 127
-    rotated: 0
+    x: 0
+    y: 216
+    width: 128
+    height: 128
+    borderLeft: 1
+    borderRight: 1
+    borderTop: 1
+    borderBottom: 0
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
   - name: button_sliced
-    outer:
-      serializedVersion: 2
-      x: 432
-      y: 727
-      width: 80
-      height: 40
-    inner:
-      serializedVersion: 2
-      x: 469
-      y: 744
-      width: 13
-      height: 14
-    rotated: 0
+    x: 432
+    y: 727
+    width: 80
+    height: 40
+    borderLeft: 37
+    borderRight: 30
+    borderTop: 17
+    borderBottom: 9
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
   - name: ListBox_background
-    outer:
-      serializedVersion: 2
-      x: 513
-      y: 727
-      width: 80
-      height: 40
-    inner:
-      serializedVersion: 2
-      x: 541
-      y: 727
-      width: 8
-      height: 40
-    rotated: 0
+    x: 513
+    y: 727
+    width: 80
+    height: 40
+    borderLeft: 28
+    borderRight: 44
+    borderTop: 0
+    borderBottom: 0
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
   - name: state_button_front
-    outer:
-      serializedVersion: 2
-      x: 222
-      y: 307
-      width: 40
-      height: 40
-    inner:
-      serializedVersion: 2
-      x: 253
-      y: 307
-      width: 9
-      height: 40
-    rotated: 0
+    x: 222
+    y: 307
+    width: 40
+    height: 40
+    borderLeft: 31
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
   - name: WindowCaption
-    outer:
-      serializedVersion: 2
-      x: 675
-      y: 727
-      width: 80
-      height: 40
-    inner:
-      serializedVersion: 2
-      x: 716
-      y: 747
-      width: 9
-      height: 5
-    rotated: 0
+    x: 675
+    y: 727
+    width: 80
+    height: 40
+    borderLeft: 41
+    borderRight: 30
+    borderTop: 20
+    borderBottom: 15
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
   - name: slider_V_foreground
-    outer:
-      serializedVersion: 2
-      x: 81
-      y: 6
-      width: 30
-      height: 80
-    inner:
-      serializedVersion: 2
-      x: 81
-      y: 12
-      width: 30
-      height: 69
-    rotated: 0
+    x: 81
+    y: 6
+    width: 30
+    height: 80
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 6
+    borderBottom: 5
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
   - name: SliderCircle_Foreground_BIG
-    outer:
-      serializedVersion: 2
-      x: 0
-      y: 345
-      width: 140
-      height: 140
-    inner:
-      serializedVersion: 2
-      x: 0
-      y: 345
-      width: 140
-      height: 140
-    rotated: 0
+    x: 0
+    y: 345
+    width: 140
+    height: 140
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
   - name: SliderCircle_Thum
-    outer:
-      serializedVersion: 2
-      x: 141
-      y: 105
-      width: 80
-      height: 80
-    inner:
-      serializedVersion: 2
-      x: 141
-      y: 105
-      width: 80
-      height: 80
-    rotated: 0
+    x: 141
+    y: 105
+    width: 80
+    height: 80
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
   - name: switch_thumb
-    outer:
-      serializedVersion: 2
-      x: 952
-      y: 803
-      width: 50
-      height: 40
-    inner:
-      serializedVersion: 2
-      x: 952
-      y: 803
-      width: 50
-      height: 40
-    rotated: 0
+    x: 952
+    y: 803
+    width: 50
+    height: 40
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
   - name: WindowFooter
-    outer:
-      serializedVersion: 2
-      x: 594
-      y: 727
-      width: 80
-      height: 40
-    inner:
-      serializedVersion: 2
-      x: 635
-      y: 740
-      width: 6
-      height: 5
-    rotated: 0
+    x: 594
+    y: 727
+    width: 80
+    height: 40
+    borderLeft: 41
+    borderRight: 33
+    borderTop: 13
+    borderBottom: 22
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
   - name: ListBox_hilight
-    outer:
-      serializedVersion: 2
-      x: 952
-      y: 772
-      width: 50
-      height: 30
-    inner:
-      serializedVersion: 2
-      x: 960
-      y: 781
-      width: 35
-      height: 14
-    rotated: 0
+    x: 952
+    y: 772
+    width: 50
+    height: 30
+    borderLeft: 8
+    borderRight: 7
+    borderTop: 9
+    borderBottom: 7
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
   - name: state_button_background
-    outer:
-      serializedVersion: 2
-      x: 222
-      y: 145
-      width: 40
-      height: 40
-    inner:
-      serializedVersion: 2
-      x: 246
-      y: 145
-      width: 1
-      height: 40
-    rotated: 0
+    x: 222
+    y: 145
+    width: 40
+    height: 40
+    borderLeft: 24
+    borderRight: 15
+    borderTop: 0
+    borderBottom: 0
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
   - name: slider_H_background
-    outer:
-      serializedVersion: 2
-      x: 756
-      y: 737
-      width: 80
-      height: 30
-    inner:
-      serializedVersion: 2
-      x: 760
-      y: 737
-      width: 72
-      height: 30
-    rotated: 0
+    x: 756
+    y: 737
+    width: 80
+    height: 30
+    borderLeft: 4
+    borderRight: 4
+    borderTop: 0
+    borderBottom: 0
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
   - name: button_sliced_arrow_down
-    outer:
-      serializedVersion: 2
-      x: 971
-      y: 944
-      width: 40
-      height: 80
-    inner:
-      serializedVersion: 2
-      x: 971
-      y: 944
-      width: 40
-      height: 80
-    rotated: 0
+    x: 971
+    y: 944
+    width: 40
+    height: 80
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
   - name: slider_V_thumb_B
-    outer:
-      serializedVersion: 2
-      x: 222
-      y: 286
-      width: 30
-      height: 20
-    inner:
-      serializedVersion: 2
-      x: 222
-      y: 286
-      width: 30
-      height: 20
-    rotated: 0
+    x: 222
+    y: 286
+    width: 30
+    height: 20
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
   - name: slider_H_thumb
-    outer:
-      serializedVersion: 2
-      x: 1003
-      y: 813
-      width: 20
-      height: 30
-    inner:
-      serializedVersion: 2
-      x: 1003
-      y: 813
-      width: 20
-      height: 30
-    rotated: 0
+    x: 1003
+    y: 813
+    width: 20
+    height: 30
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
   - name: Checkbox_background
-    outer:
-      serializedVersion: 2
-      x: 222
-      y: 226
-      width: 40
-      height: 40
-    inner:
-      serializedVersion: 2
-      x: 222
-      y: 226
-      width: 40
-      height: 40
-    rotated: 0
+    x: 222
+    y: 226
+    width: 40
+    height: 40
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
   - name: button_sliced_arrow_up
-    outer:
-      serializedVersion: 2
-      x: 971
-      y: 863
-      width: 40
-      height: 80
-    inner:
-      serializedVersion: 2
-      x: 991
-      y: 894
-      width: 2
-      height: 32
-    rotated: 0
+    x: 971
+    y: 863
+    width: 40
+    height: 80
+    borderLeft: 20
+    borderRight: 18
+    borderTop: 31
+    borderBottom: 17
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
   - name: Frame_Down
-    outer:
-      serializedVersion: 2
-      x: 0
-      y: 6
-      width: 80
-      height: 80
-    inner:
-      serializedVersion: 2
-      x: 38
-      y: 32
-      width: 10
-      height: 1
-    rotated: 0
+    x: 0
+    y: 6
+    width: 80
+    height: 80
+    borderLeft: 38
+    borderRight: 32
+    borderTop: 26
+    borderBottom: 53
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
   - name: background_tile
-    outer:
-      serializedVersion: 2
-      x: 141
-      y: 267
-      width: 80
-      height: 80
-    inner:
-      serializedVersion: 2
-      x: 142
-      y: 268
-      width: 79
-      height: 79
-    rotated: 0
+    x: 141
+    y: 267
+    width: 80
+    height: 80
+    borderLeft: 1
+    borderRight: 1
+    borderTop: 1
+    borderBottom: 1
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
   - name: SliderCircle_Foreground
-    outer:
-      serializedVersion: 2
-      x: 141
-      y: 429
-      width: 80
-      height: 80
-    inner:
-      serializedVersion: 2
-      x: 141
-      y: 429
-      width: 80
-      height: 80
-    rotated: 0
+    x: 141
+    y: 429
+    width: 80
+    height: 80
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
   - name: slider_H_thumb_B
-    outer:
-      serializedVersion: 2
-      x: 1003
-      y: 772
-      width: 20
-      height: 30
-    inner:
-      serializedVersion: 2
-      x: 1003
-      y: 772
-      width: 20
-      height: 30
-    rotated: 0
+    x: 1003
+    y: 772
+    width: 20
+    height: 30
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
   - name: ProgressBar_foreground
-    outer:
-      serializedVersion: 2
-      x: 871
-      y: 772
-      width: 80
-      height: 30
-    inner:
-      serializedVersion: 2
-      x: 878
-      y: 772
-      width: 66
-      height: 30
-    rotated: 0
+    x: 871
+    y: 772
+    width: 80
+    height: 30
+    borderLeft: 7
+    borderRight: 7
+    borderTop: 0
+    borderBottom: 0
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
   - name: slider_V_background
-    outer:
-      serializedVersion: 2
-      x: 222
-      y: 429
-      width: 30
-      height: 80
-    inner:
-      serializedVersion: 2
-      x: 222
-      y: 434
-      width: 30
-      height: 70
-    rotated: 0
+    x: 222
+    y: 429
+    width: 30
+    height: 80
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 5
+    borderBottom: 5
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
   - name: pattern_1
-    outer:
-      serializedVersion: 2
-      x: 141
-      y: 510
-      width: 128
-      height: 128
-    inner:
-      serializedVersion: 2
-      x: 141
-      y: 511
-      width: 128
-      height: 113
-    rotated: 0
+    x: 141
+    y: 510
+    width: 128
+    height: 128
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 1
+    borderBottom: 14
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
   - name: Frame_Up
-    outer:
-      serializedVersion: 2
-      x: 141
-      y: 348
-      width: 80
-      height: 80
-    inner:
-      serializedVersion: 2
-      x: 180
-      y: 403
-      width: 9
-      height: 4
-    rotated: 0
+    x: 141
+    y: 348
+    width: 80
+    height: 80
+    borderLeft: 39
+    borderRight: 32
+    borderTop: 55
+    borderBottom: 21
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
   - name: Checkbox_forground_X
-    outer:
-      serializedVersion: 2
-      x: 222
-      y: 64
-      width: 40
-      height: 40
-    inner:
-      serializedVersion: 2
-      x: 222
-      y: 64
-      width: 40
-      height: 40
-    rotated: 0
+    x: 222
+    y: 64
+    width: 40
+    height: 40
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
   - name: Option_foreground_dot
-    outer:
-      serializedVersion: 2
-      x: 222
-      y: 23
-      width: 40
-      height: 40
-    inner:
-      serializedVersion: 2
-      x: 222
-      y: 23
-      width: 40
-      height: 40
-    rotated: 0
+    x: 222
+    y: 23
+    width: 40
+    height: 40
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
   - name: Verdana32_0
-    outer:
-      serializedVersion: 2
-      x: 513
-      y: 768
-      width: 256
-      height: 256
-    inner:
-      serializedVersion: 2
-      x: 513
-      y: 768
-      width: 256
-      height: 256
-    rotated: 0
+    x: 513
+    y: 768
+    width: 256
+    height: 256
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
   - name: Verdana32B_0
-    outer:
-      serializedVersion: 2
-      x: 0
-      y: 768
-      width: 512
-      height: 256
-    inner:
-      serializedVersion: 2
-      x: 0
-      y: 768
-      width: 512
-      height: 256
-    rotated: 0
+    x: 0
+    y: 768
+    width: 512
+    height: 256
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
+  mPixelSize: 1
+  mReplacement: {fileID: 0}
+  mCoordinates: 0
+  sprites: []
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
