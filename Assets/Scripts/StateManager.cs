@@ -43,7 +43,7 @@ public class StateManager : MonoBehaviour {
 
 	void Start()
 	{			
-		m_currentState = MainMenu;
+		m_currentState = InGameMenu;
 		m_currentState.gameObject.SetActive (true);
 		m_currentState.OnEnter ();
 

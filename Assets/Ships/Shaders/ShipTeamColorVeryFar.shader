@@ -1,24 +1,23 @@
-﻿Shader "Custom/ShipGlow" {
-	Properties
+﻿Shader "Custom/ShipTeamColorVeryFar" {
+Properties
 	{
-		_MainTex ("Base (RGB)", 2D) = "white" {}
+		_TeamColor ("Team base Color (RGB)", Color) = (1.0, 0.0, 0.0, 1.0)
 	}
 	
 	SubShader
 	{
 		Tags
 		{
-			"RenderType" = "Transparent"
-			"Queue" = "Transparent"
+			"RenderType" = "Opaque"
+			"Queue" = "Geometry"
 			"LightMode" = "Vertex"
 			"ForceNoShadowCasting" = "True"
 			"IgnoreProjector" = "True"
 		}
 		
-		Cull Off
+		Cull Back
 		Lighting Off
-		Fog { Mode Off }		
-		Blend One One
+		Fog { Mode Off }
 		ZWrite Off
 		ZTest On
 		ColorMask RGB
@@ -34,29 +33,25 @@
 				struct appdata_t
 				{
 					float4 vertex : POSITION;
-					half2 texcoord : TEXCOORD0;
 				};
 	
 				struct v2f
 				{
 					float4 vertex : SV_POSITION;
-					half2 texcoord : TEXCOORD0;
 				};
 	
-				sampler2D _MainTex;
+				fixed4 _TeamColor;
 				
 				v2f vert (appdata_t v)
 				{
 					v2f o;
-					o.vertex = mul(UNITY_MATRIX_MVP, v.vertex);
-					o.texcoord = v.texcoord;								
+					o.vertex = mul(UNITY_MATRIX_MVP, v.vertex);						
 					return o;
 				}
 				
 				fixed4 frag (v2f i) : COLOR
 				{
-					fixed4 col = tex2D(_MainTex, i.texcoord);
-					return col;
+					return _TeamColor;
 				}
 			ENDCG
 		}

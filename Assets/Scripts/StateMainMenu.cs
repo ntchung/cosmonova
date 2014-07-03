@@ -7,16 +7,10 @@ public class StateMainMenu : GameState {
 	
 	void Awake()
 	{
-		UIEventListener.Get (FindChild ("ButtonPlay")).onClick += (obj) =>
-		{
-			StartCoroutine (OnPlayButtonClick ());
-		};		
 	}
 	
-	private IEnumerator OnPlayButtonClick()
-	{
-		yield return StartCoroutine(Utils.WaitForRealSeconds(0.25f));
-		
+	public void OnPlayButtonClick()
+	{		
 		StateManager.Instance.PushState (StateManager.Instance.InGameMenu);				
 	}
 	

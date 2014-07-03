@@ -24,6 +24,7 @@
 		Fog { Mode Off }
 		ZWrite On
 		ZTest On
+		ColorMask RGB
 
 		Pass
 		{
