@@ -19,6 +19,10 @@ public class Starship : MonoBehaviour
 	private const float maxForce = 100.0f;
 
 	public Thruster[] thrusters;
+	public ShipTurretPoint[] barrels;
+
+	public Camera camera;
+	public GameObject turret;
 
 	private Vector3 forward;
 	private float speed;
@@ -88,7 +92,7 @@ public class Starship : MonoBehaviour
 			{
 				desired *= maxSpeed;
 
-				if (d < 500.0f)
+				if (d < 400.0f)
 				{
 					state = State.ORBITING;
 				}
@@ -118,13 +122,13 @@ public class Starship : MonoBehaviour
 			Vector3 tangent = target;
 			tangent = new Vector3(-tangent.z, 0.0f, tangent.x);
 
-			target *= 500.0f;
+			target *= 400.0f;
 
 			target.y = position.y;
 
 			if (Vector3.Cross(forward, position).y > 0.0f) tangent = -tangent;
 
-			speed = maxSpeed * 0.2f;
+			speed = maxSpeed * 0.01f;
 			forward = tangent;
 			position += speed * forward * Time.deltaTime;
 			
@@ -238,5 +242,34 @@ public class Starship : MonoBehaviour
 
 		transform.position = position;
 		transform.rotation = Quaternion.LookRotation(forward);
+
+		UpdateShoot();
+	}
+
+	private void UpdateShoot()
+	{
+		Vector3 targetPoint = GetTargetPoint();
+		Vector3 forward = (targetPoint - turret.transform.position).normalized;
+
+		Quaternion quaternion = Quaternion.LookRotation(forward, Vector3.up);
+		turret.transform.rotation = quaternion;
+
+		if (Input.GetMouseButton(0))
+		{
+			Shoot();
+		}
+	}
+
+	private void Shoot()
+	{
+		foreach (ShipTurretPoint barrel in barrels)
+		{
+			barrel.Shoot();
+		}
+	}
+
+	public Vector3 GetTargetPoint()
+	{
+		return camera.ScreenToWorldPoint(new Vector3(camera.pixelWidth / 2.0f, camera.pixelHeight / 2.0f, camera.farClipPlane));
 	}
 }

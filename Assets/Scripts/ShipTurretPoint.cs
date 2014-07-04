@@ -17,6 +17,30 @@ public class ShipTurretPoint : MonoBehaviour {
 	public EDockPosition DockPosition;
 	public int Power;
 
+	public GameObject bullet;
+
+	private float cooldown = 0.0f;
+
+	public void Rotate(Quaternion quaternion)
+	{
+
+	}
+
+	public void Shoot()
+	{
+		if (cooldown > 0.0f) return;
+
+		GameObject go = GameObject.Instantiate(bullet, transform.position, transform.rotation) as GameObject;
+		//go.transform.localScale = transform.localScale;
+
+		cooldown = 0.2f;
+	}
+
+	void Update()
+	{
+		cooldown -= Time.deltaTime;
+	}
+
 	void OnDrawGizmos()
 	{
 		Gizmos.color = Color.yellow;		
