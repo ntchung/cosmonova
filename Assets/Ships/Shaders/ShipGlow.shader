@@ -8,8 +8,8 @@
 	{
 		Tags
 		{
-			"RenderType" = "Transparent"
-			"Queue" = "Transparent"
+			"RenderType" = "Opaque"
+			"Queue" = "Geometry"
 			"LightMode" = "Vertex"
 			"ForceNoShadowCasting" = "True"
 			"IgnoreProjector" = "True"
@@ -18,8 +18,7 @@
 		Cull Off
 		Lighting Off
 		Fog { Mode Off }		
-		Blend One One
-		ZWrite Off
+		ZWrite On
 		ZTest On
 		ColorMask RGB
 
