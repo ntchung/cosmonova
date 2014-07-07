@@ -17800,7 +17800,7 @@ MonoBehaviour:
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 6.80000019
+  aspectRatio: 5.66666651
 --- !u!1 &1548906507
 GameObject:
   m_ObjectHideFlags: 0
