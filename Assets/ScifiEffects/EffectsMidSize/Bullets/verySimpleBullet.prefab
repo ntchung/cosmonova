@@ -88,7 +88,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 603ade9c469eecc49b6d7505d5ff7005, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  impulseForce: .300000012
+  impulseForce: 1.20000005
   muzzleFire: {fileID: 0}
   explosion: {fileID: 100004, guid: ab9d1e7934e92f64faedfa68a955639f, type: 2}
   damage: .100000001

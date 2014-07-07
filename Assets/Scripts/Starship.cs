@@ -21,7 +21,7 @@ public class Starship : MonoBehaviour
 	public Thruster[] thrusters;
 	public ShipTurretPoint[] barrels;
 
-	public Camera camera;
+	public Camera myCamera;
 	public GameObject turret;
 
 	private Vector3 forward;
@@ -50,6 +50,7 @@ public class Starship : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
+		/*
 		position = transform.position;
 
 		bool thrusterOn = false;
@@ -242,6 +243,7 @@ public class Starship : MonoBehaviour
 
 		transform.position = position;
 		transform.rotation = Quaternion.LookRotation(forward);
+		*/
 
 		UpdateShoot();
 	}
@@ -264,12 +266,12 @@ public class Starship : MonoBehaviour
 	{
 		foreach (ShipTurretPoint barrel in barrels)
 		{
-			barrel.Shoot();
+			barrel.Shoot(gameObject.layer);
 		}
 	}
 
 	public Vector3 GetTargetPoint()
 	{
-		return camera.ScreenToWorldPoint(new Vector3(camera.pixelWidth / 2.0f, camera.pixelHeight / 2.0f, camera.farClipPlane));
+		return myCamera.ScreenToWorldPoint(new Vector3(myCamera.pixelWidth / 2.0f, myCamera.pixelHeight / 2.0f, myCamera.farClipPlane));
 	}
 }

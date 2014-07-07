@@ -84,6 +84,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400010}
   - 65: {fileID: 6500000}
+  - 114: {fileID: 11400002}
   m_Layer: 0
   m_Name: AttackBomber
   m_TagString: Untagged
@@ -443,7 +444,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100010}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1050, y: 0, z: 0}
+  m_LocalPosition: {x: -803.346924, y: -183, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400008}
@@ -649,7 +650,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100042}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106829}
   m_LocalPosition: {x: 0, y: -.5, z: .899999976}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -989,6 +990,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DockPosition: 0
   Power: 100
+  bullet: {fileID: 100002, guid: 91c1a75ef8417b54db5bb548e03da902, type: 2}
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7843f39e98d54814dbf7f76c1c8546ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  side: 1
+  pos: {x: 0, y: 0, z: 0}
+  forward: {x: 0, y: 0, z: 0}
+  up: {x: 0, y: 0, z: 0}
+  right: {x: 0, y: 0, z: 0}
+  speed: 0
+  size: {x: 0, y: 0, z: 0}
+  turret: {fileID: 11400000}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

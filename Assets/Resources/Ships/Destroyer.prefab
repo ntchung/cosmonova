@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 400000}
   - 33: {fileID: 3300000}
   - 23: {fileID: 2300000}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hgn_Leftover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ GameObject:
   - 4: {fileID: 400002}
   - 33: {fileID: 3300002}
   - 23: {fileID: 2300002}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hgn_Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400004}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LOD3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59,7 +59,7 @@ GameObject:
   - 4: {fileID: 400006}
   - 33: {fileID: 3300004}
   - 23: {fileID: 2300004}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: badge2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76,7 +76,7 @@ GameObject:
   - 4: {fileID: 400008}
   - 33: {fileID: 3300006}
   - 23: {fileID: 2300006}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hgn_Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,7 +91,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400010}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: body2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400012}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LOD2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -123,7 +123,7 @@ GameObject:
   - 4: {fileID: 400014}
   - 33: {fileID: 3300010}
   - 23: {fileID: 2300010}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hgn_Leftover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -140,7 +140,7 @@ GameObject:
   - 4: {fileID: 400016}
   - 33: {fileID: 3300012}
   - 23: {fileID: 2300012}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hgn_Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -157,7 +157,7 @@ GameObject:
   - 4: {fileID: 400018}
   - 33: {fileID: 3300014}
   - 23: {fileID: 2300014}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hgn_Burner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -174,7 +174,7 @@ GameObject:
   - 4: {fileID: 400020}
   - 33: {fileID: 3300016}
   - 23: {fileID: 2300016}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: badge2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -191,7 +191,7 @@ GameObject:
   - 4: {fileID: 400022}
   - 33: {fileID: 3300018}
   - 23: {fileID: 2300018}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: badge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -206,7 +206,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400024}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: body1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -221,7 +221,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400026}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -237,7 +237,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 400028}
   - 64: {fileID: 6400000}
-  m_Layer: 0
+  - 114: {fileID: 11400008}
+  m_Layer: 9
   m_Name: Destroyer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -252,7 +253,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400030}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Turret3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -267,7 +268,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400032}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -284,7 +285,7 @@ GameObject:
   - 4: {fileID: 400034}
   - 33: {fileID: 3300020}
   - 23: {fileID: 2300020}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hgn_Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -301,7 +302,7 @@ GameObject:
   - 4: {fileID: 400036}
   - 33: {fileID: 3300022}
   - 23: {fileID: 2300022}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hgn_Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -316,7 +317,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400038}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -333,7 +334,7 @@ GameObject:
   - 4: {fileID: 400040}
   - 33: {fileID: 3300024}
   - 23: {fileID: 2300024}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hgn_Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -348,7 +349,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400042}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TurretBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -363,7 +364,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400044}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TurretBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -380,7 +381,7 @@ GameObject:
   - 4: {fileID: 400046}
   - 33: {fileID: 3300026}
   - 23: {fileID: 2300026}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hgn_Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -395,7 +396,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400048}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -412,7 +413,7 @@ GameObject:
   - 4: {fileID: 400050}
   - 33: {fileID: 3300028}
   - 23: {fileID: 2300028}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hgn_Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -429,7 +430,7 @@ GameObject:
   - 4: {fileID: 400052}
   - 33: {fileID: 3300030}
   - 23: {fileID: 2300030}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hgn_Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -444,7 +445,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400054}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -459,7 +460,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400056}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Turret2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -474,7 +475,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400058}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Turret1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -489,7 +490,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400060}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -506,7 +507,7 @@ GameObject:
   - 4: {fileID: 400062}
   - 33: {fileID: 3300032}
   - 23: {fileID: 2300032}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hgn_Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -523,7 +524,7 @@ GameObject:
   - 4: {fileID: 400064}
   - 33: {fileID: 3300034}
   - 23: {fileID: 2300034}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hgn_Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -538,7 +539,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400066}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -555,7 +556,7 @@ GameObject:
   - 4: {fileID: 400068}
   - 33: {fileID: 3300036}
   - 23: {fileID: 2300036}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hgn_Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -570,7 +571,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400070}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TurretBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -585,7 +586,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400072}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: body1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -602,7 +603,7 @@ GameObject:
   - 4: {fileID: 400074}
   - 33: {fileID: 3300038}
   - 23: {fileID: 2300038}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: badge2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -619,7 +620,7 @@ GameObject:
   - 4: {fileID: 400076}
   - 33: {fileID: 3300040}
   - 23: {fileID: 2300040}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hgn_Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -636,7 +637,7 @@ GameObject:
   - 4: {fileID: 400078}
   - 33: {fileID: 3300042}
   - 23: {fileID: 2300042}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hgn_Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -653,7 +654,7 @@ GameObject:
   - 4: {fileID: 400080}
   - 33: {fileID: 3300044}
   - 23: {fileID: 2300044}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: badge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -668,7 +669,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400082}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Turret2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -683,7 +684,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400084}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TurretBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -698,7 +699,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400086}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Turret3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -715,7 +716,7 @@ GameObject:
   - 4: {fileID: 400088}
   - 33: {fileID: 3300046}
   - 23: {fileID: 2300046}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hgn_Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -730,7 +731,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400090}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TurretBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -745,7 +746,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400092}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -760,7 +761,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400094}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -777,7 +778,7 @@ GameObject:
   - 4: {fileID: 400096}
   - 33: {fileID: 3300048}
   - 23: {fileID: 2300048}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hgn_Leftover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -794,7 +795,7 @@ GameObject:
   - 4: {fileID: 400098}
   - 33: {fileID: 3300050}
   - 23: {fileID: 2300050}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hgn_Burner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -811,7 +812,7 @@ GameObject:
   - 4: {fileID: 400100}
   - 33: {fileID: 3300052}
   - 23: {fileID: 2300052}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hgn_Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -828,7 +829,7 @@ GameObject:
   - 4: {fileID: 400102}
   - 33: {fileID: 3300054}
   - 23: {fileID: 2300054}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hgn_Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -843,7 +844,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400104}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -860,7 +861,7 @@ GameObject:
   - 4: {fileID: 400106}
   - 33: {fileID: 3300056}
   - 23: {fileID: 2300056}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hgn_Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -877,7 +878,7 @@ GameObject:
   - 4: {fileID: 400108}
   - 33: {fileID: 3300058}
   - 23: {fileID: 2300058}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hgn_Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -892,7 +893,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400110}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -909,7 +910,7 @@ GameObject:
   - 4: {fileID: 400112}
   - 33: {fileID: 3300060}
   - 23: {fileID: 2300060}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hgn_Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -924,7 +925,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400114}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TurretBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -939,7 +940,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400116}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -954,7 +955,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400118}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -969,7 +970,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400120}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -986,7 +987,7 @@ GameObject:
   - 4: {fileID: 400122}
   - 33: {fileID: 3300062}
   - 23: {fileID: 2300062}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hgn_Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1003,7 +1004,7 @@ GameObject:
   - 4: {fileID: 400124}
   - 33: {fileID: 3300064}
   - 23: {fileID: 2300064}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hgn_Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1018,7 +1019,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400126}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Turret1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1033,7 +1034,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400128}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: body2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1050,7 +1051,7 @@ GameObject:
   - 4: {fileID: 400130}
   - 33: {fileID: 3300008}
   - 23: {fileID: 2300008}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hgn_Burner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1067,7 +1068,7 @@ GameObject:
   - 4: {fileID: 400132}
   - 33: {fileID: 3300066}
   - 23: {fileID: 2300066}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hgn_Leftover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1084,7 +1085,7 @@ GameObject:
   - 4: {fileID: 400134}
   - 33: {fileID: 3300068}
   - 23: {fileID: 2300068}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: badge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1100,7 +1101,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400136}
   - 114: {fileID: 11400000}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Rear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1116,7 +1117,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400138}
   - 114: {fileID: 11400002}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Port
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1131,7 +1132,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400140}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barrels
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1147,7 +1148,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400142}
   - 114: {fileID: 11400004}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1163,7 +1164,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400144}
   - 114: {fileID: 11400006}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Aft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1358,7 +1359,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 50, y: 100, z: -5120.75293}
+  m_LocalPosition: {x: -836.852173, y: -184, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400104}
@@ -2100,7 +2101,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100142}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106829}
   m_LocalPosition: {x: 0, y: 1.5, z: 22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -3089,6 +3090,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DockPosition: 4
   Power: 60
+  bullet: {fileID: 0}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3102,6 +3104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DockPosition: 1
   Power: 80
+  bullet: {fileID: 0}
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3115,6 +3118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DockPosition: 3
   Power: 100
+  bullet: {fileID: 100000, guid: d13bd1376b3888c4fbd0abb82cf381f9, type: 2}
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3128,6 +3132,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DockPosition: 2
   Power: 60
+  bullet: {fileID: 0}
+--- !u!114 &11400008
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7843f39e98d54814dbf7f76c1c8546ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  side: 1
+  pos: {x: 0, y: 0, z: 0}
+  forward: {x: 0, y: 0, z: 0}
+  up: {x: 0, y: 0, z: 0}
+  right: {x: 0, y: 0, z: 0}
+  speed: 0
+  size: {x: 0, y: 0, z: 0}
+  turret: {fileID: 11400004}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

@@ -19,32 +19,31 @@ public class ShipTurretPoint : MonoBehaviour {
 
 	public GameObject bullet;
 
-	private float cooldown = 0.0f;
-
 	public void Rotate(Quaternion quaternion)
 	{
 
 	}
 
-	public void Shoot()
+	public void Shoot(int layer)
 	{
-		if (cooldown > 0.0f) return;
-
 		GameObject go = GameObject.Instantiate(bullet, transform.position, transform.rotation) as GameObject;
-		//go.transform.localScale = transform.localScale;
+		go.layer = layer;
+	}
 
-		cooldown = 0.2f;
+	public void Shoot(Vector3 dir, int layer)
+	{
+		GameObject go = GameObject.Instantiate(bullet, transform.position, Quaternion.LookRotation(dir) * transform.localRotation) as GameObject;
+		go.layer = layer;
 	}
 
 	void Update()
 	{
-		cooldown -= Time.deltaTime;
 	}
 
 	void OnDrawGizmos()
 	{
-		Gizmos.color = Color.yellow;		
-		Gizmos.DrawWireSphere(transform.position, 0.5f);
+		//Gizmos.color = Color.yellow;		
+		//Gizmos.DrawWireSphere(transform.position, 0.5f);
 	}		
 	
 	void OnDrawGizmosSelected()
