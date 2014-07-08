@@ -90,7 +90,7 @@ public class Sector : MonoBehaviour
 
 	void OnGUI () 
 	{
-		selectedPlanet = GUI.Toolbar (new Rect (25, 25, 300, 30), selectedPlanet, planetStrings);
-		stopping = GUI.Toggle (new Rect (25, 75, 100, 30), stopping, "Stop");
+		//selectedPlanet = GUI.Toolbar (new Rect (25, 25, 300, 30), selectedPlanet, planetStrings);
+		//stopping = GUI.Toggle (new Rect (25, 75, 100, 30), stopping, "Stop");
 	}
 }
