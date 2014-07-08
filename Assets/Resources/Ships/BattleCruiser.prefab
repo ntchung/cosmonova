@@ -156,6 +156,7 @@ GameObject:
   - 114: {fileID: 11400014}
   - 64: {fileID: 6400000}
   - 114: {fileID: 11400020}
+  - 54: {fileID: 5400000}
   m_Layer: 8
   m_Name: BattleCruiser
   m_TagString: Untagged
@@ -1796,6 +1797,21 @@ Skybox:
   m_GameObject: {fileID: 100048}
   m_Enabled: 1
   m_CustomSkybox: {fileID: 2100000, guid: 05a7e1a8702132043b730a13cd0b3447, type: 2}
+--- !u!54 &5400000
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100018}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!64 &6400000
 MeshCollider:
   m_ObjectHideFlags: 1
@@ -1967,12 +1983,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98bc7b56c31e9aa43be6dbfaa2ac3b88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  side: 0
   pos: {x: 0, y: 0, z: 0}
   forward: {x: 0, y: 0, z: 0}
   up: {x: 0, y: 0, z: 0}
   right: {x: 0, y: 0, z: 0}
   speed: 0
   size: {x: 20, y: 20, z: 80}
+  hp: 1000
+  isDead: 0
+  explosion: {fileID: 100004, guid: 1888c5d6976ad0e43aeeae72d37ca141, type: 2}
 --- !u!114 &11400022
 MonoBehaviour:
   m_ObjectHideFlags: 1

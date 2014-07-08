@@ -14,30 +14,58 @@ public class Fighter : TestShip
 
 	public ShipTurretPoint turret;
 
+	float targetCooldown;
+
 	// Use this for initialization
 	void Start ()
 	{
 		Init();
 
-		GameObject root = GameObject.Find(side == 0 ? "Enemy" : "Me");
-		int numTargets = root.transform.childCount;
-		int targetIndex = Random.Range(0, numTargets);
-		targetShip = root.transform.GetChild(targetIndex).GetComponent<TestShip>();
-
 		if (side == 0) guardShip = GameObject.Find("BattleCruiser").GetComponent<TestShip>();
-		else
-		{
-			targetShip = GameObject.Find("BattleCruiser").GetComponent<TestShip>();
-			guardShip = null;
-		}
+		else guardShip = null;
+
+		targetCooldown = 0.0f;
+		FindTarget();
 
 		gunCooldown = 0.0f;
 		canShoot = true;
 	}
 
+	void FindTarget()
+	{
+		GameObject root = GameObject.Find(side == 0 ? "Enemy" : "Me");
+		int numTargets = root.transform.childCount;
+
+		targetShip = null;
+		float d = float.MaxValue;
+
+		for (int i = 0; i < numTargets; i++)
+		{
+			TestShip curShip = root.transform.GetChild(i).GetComponent<TestShip>();
+
+			Vector3 u = curShip.pos - pos;
+			u.y = 0.0f;
+
+			float l = u.magnitude;
+			if (l < d)
+			{
+				d = l;
+				targetShip = curShip;
+			}
+		}
+
+		targetCooldown = Random.Range(8.0f, 10.0f);
+	}
+
 	// Update is called once per frame
 	void Update ()
 	{
+		targetCooldown -= Time.deltaTime;
+		if (targetCooldown <= 0.0f || (targetShip != null && targetShip.isDead))
+		{
+			FindTarget();
+		}
+
 		gunCooldown -= Time.deltaTime;
 		if (gunCooldown <= 0.0f)
 		{

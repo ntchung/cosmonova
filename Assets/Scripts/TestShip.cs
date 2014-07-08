@@ -15,6 +15,11 @@ public class TestShip : MonoBehaviour
 
 	public Vector3 size;
 
+	public float hp;
+	public bool isDead;
+
+	public GameObject explosion;
+
 	// Use this for initialization
 	void Start ()
 	{
@@ -28,8 +33,10 @@ public class TestShip : MonoBehaviour
 		forward = transform.rotation * Vector3.forward;
 		up = Vector3.up;
 		right = Vector3.Cross(up, forward);
-		
+
 		speed = 0.0f;
+
+		isDead = false;
 	}
 
 	// Update is called once per frame
@@ -46,6 +53,29 @@ public class TestShip : MonoBehaviour
 		res += right * Random.Range(-size.x / 2.0f, size.x / 2.0f);
 
 		return res;
+	}
+
+	void OnCollisionEnter(Collision collision) 
+	{
+		SFE_BulletController bulletController = collision.gameObject.GetComponent<SFE_BulletController>();
+		if (bulletController != null)
+		{
+			hp -= bulletController.damage;
+		}
+
+		SFE_LaserController laserController = collision.gameObject.GetComponent<SFE_LaserController>();
+		if (laserController != null)
+		{
+			hp -= laserController.damage;
+		}
+
+		if (hp <= 0.0f)
+		{
+			isDead = true;
+
+			Instantiate(explosion, transform.position, transform.rotation);
+			Destroy(gameObject);
+		}
 	}
 }
 
