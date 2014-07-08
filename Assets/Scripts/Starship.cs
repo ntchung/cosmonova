@@ -32,6 +32,8 @@ public class Starship : MonoBehaviour
 	private int targetPlanetId;
 	private int landingPlanetId;
 	private float landingTime;
+	
+	private float gunCooldown;
 
 	private Sector sector;
 
@@ -255,10 +257,18 @@ public class Starship : MonoBehaviour
 
 		Quaternion quaternion = Quaternion.LookRotation(forward, Vector3.up);
 		turret.transform.rotation = quaternion;
-
-		if (Input.GetMouseButton(0))
+		
+		if( gunCooldown <= 0 )
 		{
-			Shoot();
+			if (Input.GetMouseButton(0))
+			{
+				Shoot();
+				gunCooldown = 0.25f;
+			}
+		}
+		else
+		{
+			gunCooldown -= Time.deltaTime;
 		}
 	}
 
@@ -268,6 +278,8 @@ public class Starship : MonoBehaviour
 		{
 			barrel.Shoot(gameObject.layer);
 		}
+		
+		this.audio.Play();
 	}
 
 	public Vector3 GetTargetPoint()

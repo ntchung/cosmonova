@@ -42,7 +42,7 @@ public class Fighter : TestShip
 		if (gunCooldown <= 0.0f)
 		{
 			canShoot = true;
-			gunCooldown = 0.0f;
+			gunCooldown = 1.0f;
 		}
 		else canShoot = false;
 
@@ -67,8 +67,13 @@ public class Fighter : TestShip
 				//if (Vector3.Dot(forward, shootDir) > 0.707f)
 				if (Vector3.Dot(forward, shootDir) > 0.0f)
 				{
-					gunCooldown = 0.2f;
+					gunCooldown = 1.2f;
 					turret.Shoot(shootDir, gameObject.layer);
+					if( audio != null && Global.audioCount < 10 && Vector3.Distance(Camera.main.transform.localPosition, this.transform.localPosition) < 1000.0f )
+					{
+						++Global.audioCount;
+						audio.Play();
+					}
 				}
 			}
 		}

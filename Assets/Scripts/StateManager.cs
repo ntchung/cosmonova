@@ -76,6 +76,11 @@ public class StateManager : MonoBehaviour {
 			m_currentState.OnBackKey();			
 		}
 	}
+	
+	void LateUpdate()
+	{
+		Global.audioCount = 0;
+	}
 
 	public void PushState(GameState state)
 	{
