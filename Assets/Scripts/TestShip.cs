@@ -20,10 +20,14 @@ public class TestShip : MonoBehaviour
 
 	public GameObject explosion;
 
+	private float angle;
+
 	// Use this for initialization
 	void Start ()
 	{
 		Init();
+
+		angle = Mathf.PI;
 	}
 
 	protected void Init()
@@ -42,7 +46,24 @@ public class TestShip : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
+		float r = 800.0f;
 
+		speed = 20.0f;
+
+		angle = (angle + speed * Time.deltaTime / r) % (Mathf.PI * 2.0f);
+
+		pos.x = Mathf.Cos(angle);
+		pos.z = Mathf.Sin(angle);
+
+		forward = new Vector3(-pos.z, 0.0f, pos.x);
+
+		pos.x *= r;
+		pos.z *= r;
+
+		right = Vector3.Cross(up, forward);
+
+		transform.position = pos;
+		transform.rotation = Quaternion.LookRotation(forward);
 	}
 
 	public Vector3 GetRandomPos()

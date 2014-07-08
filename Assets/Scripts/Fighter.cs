@@ -33,6 +33,15 @@ public class Fighter : TestShip
 
 	void FindTarget()
 	{
+		if (side == 1)
+		{
+			if (Random.Range(0, 4) == 0)
+			{
+				targetShip = GameObject.Find("BattleCruiser").GetComponent<TestShip>();
+				return;
+			}
+		}
+
 		GameObject root = GameObject.Find(side == 0 ? "Enemy" : "Me");
 		int numTargets = root.transform.childCount;
 
@@ -81,19 +90,23 @@ public class Fighter : TestShip
 		{
 			if (dist.magnitude < 300.0f)
 			{
-				Vector3 target = targetShip.GetRandomPos();
-				Vector3 shootDir = targetPos - turret.transform.position;
+				Vector3 shootDir = Vector3.zero;
 
 				Fighter fighter = targetShip as Fighter;
 				if (fighter != null)
 				{
-					shootDir = targetPos + targetShip.forward * targetShip.speed * 1.0f - fighter.turret.transform.position;
+					shootDir = targetPos + targetShip.forward * targetShip.speed * 1.0f - turret.transform.position;
+				}
+				else 
+				{
+					Vector3 target = targetShip.GetRandomPos();
+					shootDir = target + targetShip.forward * targetShip.speed * 1.0f - turret.transform.position;
 				}
 
 				shootDir.Normalize();
 
 				//if (Vector3.Dot(forward, shootDir) > 0.707f)
-				if (Vector3.Dot(forward, shootDir) > 0.0f)
+				if (Vector3.Dot(forward, shootDir) > 0.5f)
 				{
 					gunCooldown = 1.2f;
 					turret.Shoot(shootDir, gameObject.layer);

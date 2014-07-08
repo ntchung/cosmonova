@@ -47,6 +47,11 @@ public class Starship : MonoBehaviour
 
 		forward = Vector3.right;
 		speed = 0.0f;
+
+		foreach (Thruster thruster in thrusters) 
+		{
+			thruster.StartThruster();
+		}
 	}
 
 	// Update is called once per frame
@@ -284,6 +289,6 @@ public class Starship : MonoBehaviour
 
 	public Vector3 GetTargetPoint()
 	{
-		return myCamera.ScreenToWorldPoint(new Vector3(myCamera.pixelWidth / 2.0f, myCamera.pixelHeight / 2.0f, myCamera.farClipPlane));
+		return myCamera.ScreenToWorldPoint(new Vector3(myCamera.pixelWidth / 2.0f, myCamera.pixelHeight / 2.0f, 500.0f));
 	}
 }
