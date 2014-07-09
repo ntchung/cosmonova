@@ -3,9 +3,6 @@ using System.Collections;
 
 public class Fighter : TestShip
 {
-	const float turnSpeed = Mathf.PI / 4.0f;
-	const float maxVel = 50.0f;
-
 	float gunCooldown;
 	bool canShoot;
 
@@ -35,7 +32,7 @@ public class Fighter : TestShip
 	{
 		if (side == 1)
 		{
-			if (Random.Range(0, 4) == 0)
+			if (Random.Range(0, 2) == 0)
 			{
 				targetShip = GameObject.Find("BattleCruiser").GetComponent<TestShip>();
 				return;
@@ -52,7 +49,7 @@ public class Fighter : TestShip
 		{
 			TestShip curShip = root.transform.GetChild(i).GetComponent<TestShip>();
 
-			Vector3 u = curShip.pos - pos;
+			Vector3 u = (side == 0 ? curShip.pos - guardShip.pos : curShip.pos - pos);
 			u.y = 0.0f;
 
 			float l = u.magnitude;
@@ -62,6 +59,8 @@ public class Fighter : TestShip
 				targetShip = curShip;
 			}
 		}
+
+		if (targetShip == null) targetShip = guardShip;
 
 		targetCooldown = Random.Range(8.0f, 10.0f);
 	}
@@ -86,7 +85,7 @@ public class Fighter : TestShip
 		Vector3 targetPos = targetShip.pos;
 		Vector3 dist = targetPos - pos;
 
-		if (canShoot)
+		if (canShoot && (targetShip != guardShip))
 		{
 			if (dist.magnitude < 300.0f)
 			{

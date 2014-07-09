@@ -1028,6 +1028,7 @@ MonoBehaviour:
   hp: 2
   isDead: 0
   explosion: {fileID: 100004, guid: be45e5296c52240489952769bc3e5fe5, type: 2}
+  maxVel: 45
   turret: {fileID: 11400000}
 --- !u!1001 &100100000
 Prefab:

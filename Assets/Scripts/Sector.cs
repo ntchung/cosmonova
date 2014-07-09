@@ -17,6 +17,14 @@ public class Sector : MonoBehaviour
 
 	public static Sector Instance = null;
 
+	public GameObject[] myShipTypes;
+	public GameObject[] enemyShipTypes;
+
+	public GameObject spawnTarget;
+
+	public GameObject mySpawnRoot;
+	public GameObject enemySpawnRoot;
+
 	void Start() 
 	{
 		Instance = this;
@@ -92,5 +100,39 @@ public class Sector : MonoBehaviour
 	{
 		//selectedPlanet = GUI.Toolbar (new Rect (25, 25, 300, 30), selectedPlanet, planetStrings);
 		//stopping = GUI.Toggle (new Rect (25, 75, 100, 30), stopping, "Stop");
+
+		if (GUI.Button(new Rect (5, 40, 100, 30), "Spawn Me"))
+		{
+			GameObject prefab = myShipTypes[Random.Range(0, myShipTypes.Length)];
+
+			Vector3 pos = spawnTarget.transform.position;
+			pos.y = Random.Range(-180.0f, -190.0f);
+
+			float angle = Random.Range(-Mathf.PI, Mathf.PI);
+			float r = 300.0f;
+
+			pos.x += r * Mathf.Cos(angle);
+			pos.z += r * Mathf.Sin(angle);
+
+			GameObject ship = Instantiate(prefab, pos, Quaternion.identity) as GameObject;	
+			ship.transform.parent = mySpawnRoot.transform;
+		}
+
+		if (GUI.Button(new Rect (5, 80, 100, 30), "Spawn Enemy"))
+		{
+			GameObject prefab = enemyShipTypes[Random.Range(0, enemyShipTypes.Length)];
+			
+			Vector3 pos = spawnTarget.transform.position;
+			pos.y = Random.Range(-180.0f, -190.0f);
+			
+			float angle = Random.Range(-Mathf.PI, Mathf.PI);
+			float r = 300.0f;
+			
+			pos.x += r * Mathf.Cos(angle);
+			pos.z += r * Mathf.Sin(angle);
+			
+			GameObject ship = Instantiate(prefab, pos, Quaternion.identity) as GameObject;	
+			ship.transform.parent = enemySpawnRoot.transform;
+		}
 	}
 }

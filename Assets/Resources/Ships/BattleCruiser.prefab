@@ -2052,6 +2052,7 @@ MonoBehaviour:
   hp: 10000
   isDead: 0
   explosion: {fileID: 100004, guid: 1888c5d6976ad0e43aeeae72d37ca141, type: 2}
+  maxVel: 10
 --- !u!114 &11400022
 MonoBehaviour:
   m_ObjectHideFlags: 1

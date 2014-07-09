@@ -22,6 +22,10 @@ public class TestShip : MonoBehaviour
 
 	private float angle;
 
+	public float maxVel;
+
+	protected float turnSpeed;
+
 	// Use this for initialization
 	void Start ()
 	{
@@ -40,6 +44,8 @@ public class TestShip : MonoBehaviour
 
 		speed = 0.0f;
 
+		turnSpeed = Mathf.PI / 4.0f * maxVel / 50.0f;
+
 		isDead = false;
 	}
 
@@ -48,7 +54,7 @@ public class TestShip : MonoBehaviour
 	{
 		float r = 800.0f;
 
-		speed = 20.0f;
+		speed = maxVel;
 
 		angle = (angle + speed * Time.deltaTime / r) % (Mathf.PI * 2.0f);
 
